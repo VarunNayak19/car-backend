@@ -50,13 +50,13 @@ app.post('/send-email', async (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-      user: 'varunrunrunrun@gmail.com', // Replace with your Gmail email address
+      user: 'varunnayaknodemailer@gmail.com', // Replace with your Gmail email address
       pass: gmailPin // Replace with your Gmail password or application-specific password if using 2FA
     }
   });
   console.log(email)
   let mailOptions = {
-    from: 'varunrunrunrun@gmail.com',
+    from: 'varunnayaknodemailer@gmail.com',
     to: email,
     subject: 'Car Rental Booking Confirmation',
     html: `
